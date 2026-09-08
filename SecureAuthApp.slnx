@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="SecureAuthApp.Api/SecureAuthApp.Api.csproj" />
+  <Project Path="SecureAuthApp.Core/SecureAuthApp.Core.csproj" />
+  <Project Path="SecureAuthApp.Infrastracture/SecureAuthApp.Infrastracture.csproj" />
+  <Project Path="SecureAuthApp.Test/SecureAuthApp.Test.csproj" Id="357160cc-926c-48a2-b934-ace0f799d83f" />
+</Solution>

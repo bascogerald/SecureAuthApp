@@ -1,0 +1,22 @@
+/* Basic Global Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    /* Sets a default font if desired */
+    font-family: system-ui, -apple-system, sans-serif; 
+}
+
+/* Forces form elements to inherit font styles from the body */
+input, button, textarea, select {
+    font: inherit;
+}
+
+.error-msg {
+  color: red;
+}

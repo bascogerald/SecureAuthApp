@@ -1,0 +1,86 @@
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 5px;
+    background: #F2F0EC;
+}
+
+.login-page h2 {
+    background: none;
+    text-align: left;
+}
+
+.login-page label {
+    font-weight: bold;
+}
+
+.login-page input {
+  border: 1px solid #D1D5DB; /* Light grey border */
+  padding: 14px 16px;        /* Generous interior spacing */
+  border-radius: 8px;        /* Softer corners */
+  width: 100%;               /* Stretch to fill container */
+  box-sizing: border-box;    /* Includes padding in total width */
+  font-size: 16px;           /* Standard readable size */
+  background-color: #FFFFFF;
+  outline: none;             /* Removes default browser focus ring */
+}
+
+/* Styles the "Enter your email/password" text */
+.login-page input::placeholder {
+  color: #9CA3AF;
+}
+
+/* Adds a focus state when the user clicks inside */
+.login-page input:focus {
+  border-color: #F7C465; /* Uses the yellow from the login button */
+}
+
+/* Base styles applied to all buttons in the form */
+.login-page button {
+  width: 100%;
+  padding: 14px;         /* Taller to match inputs */
+  border-radius: 8px;    /* Matches input corners */
+  font-size: 16px;
+  font-weight: 600;      /* Semi-bold text */
+  cursor: pointer;       /* Shows hand icon on hover */
+  box-sizing: border-box;
+}
+
+/* Specific styles for the "Login" button */
+.login-page .btn-primary {
+  background-color: #F7C465;
+  border: none;
+  color: #000000;
+}
+
+/* Specific styles for the "Sign up" button */
+.login-page .btn-secondary {
+  background-color: transparent; /* Or #FFFFFF */
+  border: 1px solid #000000;     /* Thin black outline */
+  color: #000000;
+}
+
+/* Optional: Slight hover effects for better UX */
+.login-page .btn-primary:hover {
+  background-color: #e5b45a; 
+}
+.login-page .btn-secondary:hover {
+  background-color: #f3f4f6; 
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px;
+    
+    width: 100%;
+    max-width: 400px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.04);    
+}
