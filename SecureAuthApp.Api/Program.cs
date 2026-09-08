@@ -44,3 +44,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+/* test to activate CI/CD */
