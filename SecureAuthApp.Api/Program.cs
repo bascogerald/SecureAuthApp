@@ -17,6 +17,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp",
         policy => policy.WithOrigins(
+                                    "https://secure-auth-ui-cbc9gbcsbkb5f5dg.westus3-01.azurewebsites.net",
                                     "http://localhost:8081",
                                     "http://localhost:5173",
                                     "http://localhost:3000",
