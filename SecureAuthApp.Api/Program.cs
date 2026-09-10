@@ -16,7 +16,9 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp",
-        policy => policy.WithOrigins("http://localhost:5173") // Default Vite port
+        policy => policy.WithOrigins(
+                                    "http://localhost:5173",
+                                    "http://localhost:3000") // Default Vite port
                         .AllowAnyMethod()
                         .AllowAnyHeader());
 });
