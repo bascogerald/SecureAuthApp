@@ -37,3 +37,18 @@ jobs:
         file: SecureAuthApp.Api/Dockerfile
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/secure-auth-api:latest
+        
+        - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: SecureAuthApp.Api/Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/secure-auth-api:latest
+          
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: 'secure-auth-api-v3-hgh7bthfctapaed4'
+          publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
+          images: '${{ secrets.DOCKER_USERNAME }}/secure-auth-api:latest'
